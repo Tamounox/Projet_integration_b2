@@ -4,17 +4,17 @@
       <div *ngIf="!userConnecte">
           <button class="chan" (click)="affichageConnect()">Se connecter</button>
           <div *ngIf="connexion">
-              <span class="menu">User Name: </span>
+              <span class="menu">Username: </span>
               <input class="des" type="text" [(ngModel)]="userName"> &nbsp;
               <span class="menu">Password: </span>
               <input class="des" type="password" [(ngModel)]="pwd">
-              <button class="chan" (click)="connection()">Connect</button>
+              <button class="chan" (click)="connection()">Connect!</button>
           </div>
       </div>
       <div *ngIf="userConnecte">
           <span class="menu">Bonjour {{userName}}</span>&nbsp;
           <button class="chan" routerLink="profil">Profil</button> &nbsp;
-          <button class="chan" (click)="disconnect()">Se Déconnecter</button>
+          <button class="chan" (click)="disconnect()">Déconnexion</button>
       </div>
   </div>
 </div>

@@ -33,6 +33,10 @@
     background: rgba($color: #000000, $alpha: 0);
     color: white;
 }
+.chan:hover { 
+    background: rgba($color: #aca5a5, $alpha: 0.4);
+    border-radius:20px;
+}
 .des    {
     border: none;
     border-bottom: 2px solid #aca5a5;
