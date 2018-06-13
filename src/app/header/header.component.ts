@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public connexion = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public affichageConnect() {
+    this.connexion = !this.connexion;
   }
 
 }

@@ -1,8 +1,17 @@
 <div class="navchan">
     <logo><a class="navbar-brand" href="#"><img style="height: 3rem;" src="assets/LogoT_W.png"></a></logo>
-    <div class="kun">
+    <div class="connect">
+    <button (click)="affichageConnect()">Se connecter</button>
+    <div *ngIf="connexion">
+        <span class="menu">User Name: </span>
+        <input type="text" name="login" value="Login"> &nbsp;
+        <span class="menu">Password: </span>
+        <input type="text" name="pwd" value="password">
+      </div>
+    </div>
+    <!-- <div class="kun">
         <a routerLink='/login'> Se connecter</a>
         <a routerLink='/logout'> Déconnection</a>
         <a routerLink='/login'> Profil</a>
-    </div>
+    </div> -->
 </div>
