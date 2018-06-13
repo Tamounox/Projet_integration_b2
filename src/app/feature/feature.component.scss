@@ -1,0 +1,29 @@
+.des    {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.kun    {
+    flex-grow: 1;
+    width: 30%;
+}
+.bouton-chan    {
+    background-color: #004464 ;
+    color: white;
+    border: #004464;
+    border-radius: 5%;
+}
+.bouton-kun    {
+    background-color: #ED3D4A;
+    color: white;
+    border: #ED3D4A;
+    border-radius: 5%;
+}
+.bouton-des    {
+    background-color: #FFA100;
+    color: white;
+    border: #FFA100;
+    border-radius: 5%;
+}

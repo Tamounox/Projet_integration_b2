@@ -1,0 +1,31 @@
+.transparent    {
+    display: flex;
+    background: rgba($color: white, $alpha: 0.5);
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+    min-height: 400px;
+}
+.kun    {
+   flex-grow: 1;
+   width: 30%;
+}
+.chan   {
+    height: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center; 
+    background-attachment: fixed; 
+    background-size: cover; 
+    min-height: 500px;
+    margin-top: 10%;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.des    {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
