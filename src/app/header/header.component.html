@@ -3,16 +3,17 @@
     <div class="connect">
         <div *ngIf="!userConnecte">
         <button (click)="affichageConnect()">Se connecter</button>
-            <div *ngIf="connexion">
-                <span class="menu">User Name: </span>
-                <input type="text" name="login" value="Login"> &nbsp;
-                <span class="menu">Password: </span>
-                <input type="text" name="pwd" value="password">
+          <div *ngIf="connexion">
+            <span class="menu">User Name: </span>
+            <input type="text" name="login" value="Login"> &nbsp;
+            <span class="menu">Password: </span>
+            <input type="text" name="pwd" value="password">
             <button (click)="connection()">Connect</button>
+          </div>
         </div>
         <div *ngIf="userConnecte">
-            <button (click)="disconnect()">Se Déconnecter</button>
+          <button (click)="disconnect()">Se Déconnecter</button>
+          <button routerLink="profil">Profil</button>
         </div>
     </div>
-
 </div>
