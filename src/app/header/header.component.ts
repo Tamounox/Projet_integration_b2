@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {UserServiceService} from '../services/user-service.service';
-import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,23 +9,29 @@ export class HeaderComponent implements OnInit {
 
   public connexion = false;
   public userConnecte = false;
-  user = [];
-
-  constructor(private userService: UserServiceService, private router: Router) { }
+  public userName = 'Login';
+  public pwd = 'password';
+  constructor() { }
 
   ngOnInit() {
-    this.user = this.userService.user;
   }
 
   public affichageConnect() {
     this.connexion = !this.connexion;
   }
 
-  public connection() {
-    this.userConnecte = true;
+  public connection(){
+    if (this.userName != 'admin' && this.pwd != 'admin') {
+      alert ('Mot de passe ou User Name incorrect');
+    }
+    else {
+      this.userConnecte = true;
+    }
   }
 
-  public disconnect() {
+  public disconnect(){
     this.userConnecte = false;
+    this.userName = 'Login';
+    this.pwd = 'password';
   }
 }

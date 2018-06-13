@@ -13,6 +13,7 @@ import { ContactComponent } from './home/contact/contact.component';
 import { ProfilComponent } from './profil/profil.component';
 import { HomeComponent } from './home/home.component';
 import {UserServiceService} from './services/user-service.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {UserServiceService} from './services/user-service.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    FormsModule
   ],
   providers: [UserServiceService],
   bootstrap: [AppComponent]
