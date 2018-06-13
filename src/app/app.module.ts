@@ -12,7 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { ProfilComponent } from './profil/profil.component';
 import { HomeComponent } from './home/home.component';
-import {UserServiceService} from './services/user-service.service';
+
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -33,7 +33,7 @@ import { FormsModule } from '@angular/forms';
     MDBBootstrapModule.forRoot(),
     FormsModule
   ],
-  providers: [UserServiceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

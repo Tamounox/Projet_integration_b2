@@ -1,8 +1,9 @@
 .chan   {
+    display: flex;
+    justify-content:space-around;
     min-height: 200px;
     background-color: #ededed;   
 }
 .kun    {
-    margin-left: 5%;
     margin-top: 2%;
 }

@@ -7,3 +7,10 @@
 .container {
   margin-bottom: 2em;
 }
+.chan {
+  border: none;
+  background: rgba($color: darkgrey, $alpha: 1);
+  color: white;
+  border-radius: 5%;
+  margin: 2em;
+}

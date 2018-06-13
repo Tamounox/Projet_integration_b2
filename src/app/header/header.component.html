@@ -1,19 +1,20 @@
 <div class="navchan">
-  <logo><a class="navbar-brand" href="#"><img style="height: 3rem;" src="assets/LogoT_W.png"></a></logo>
+  <logo><a class="navbar-brand" routerLink=""><img style="height: 3rem;" src="assets/LogoT_W.png"></a></logo>
   <div class="connect">
       <div *ngIf="!userConnecte">
-          <button (click)="affichageConnect()">Se connecter</button>
+          <button class="chan" (click)="affichageConnect()">Se connecter</button>
           <div *ngIf="connexion">
               <span class="menu">User Name: </span>
-              <input type="text" [(ngModel)]="userName"> &nbsp;
+              <input class="des" type="text" [(ngModel)]="userName"> &nbsp;
               <span class="menu">Password: </span>
-              <input type="password" [(ngModel)]="pwd">
-              <button (click)="connection()">Connect</button>
+              <input class="des" type="password" [(ngModel)]="pwd">
+              <button class="chan" (click)="connection()">Connect</button>
           </div>
       </div>
       <div *ngIf="userConnecte">
           <span class="menu">Bonjour {{userName}}</span>&nbsp;
-          <button (click)="disconnect()">Se Déconnecter</button>
+          <button class="chan" routerLink="profil">Profil</button> &nbsp;
+          <button class="chan" (click)="disconnect()">Se Déconnecter</button>
       </div>
   </div>
 </div>

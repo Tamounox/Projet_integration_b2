@@ -20,16 +20,15 @@ export class HeaderComponent implements OnInit {
     this.connexion = !this.connexion;
   }
 
-  public connection(){
-    if (this.userName != 'admin' && this.pwd != 'admin') {
+  public connection() {
+    if (this.userName !== 'admin' && this.pwd !== 'admin') {
       alert ('Mot de passe ou User Name incorrect');
-    }
-    else {
+    } else {
       this.userConnecte = true;
     }
   }
 
-  public disconnect(){
+  public disconnect() {
     this.userConnecte = false;
     this.userName = 'Login';
     this.pwd = 'password';
