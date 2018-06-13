@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   public connexion = false;
+  public userConnecte = false;
   constructor() { }
 
   ngOnInit() {
@@ -17,4 +18,11 @@ export class HeaderComponent implements OnInit {
     this.connexion = !this.connexion;
   }
 
+  public connection(){
+    this.userConnecte = true;
+  }
+
+  public disconnect(){
+    this.userConnecte = false;
+  }
 }
